@@ -1,0 +1,11 @@
+<a href="/">
+  <i class="fa-fa-home"></i>
+</a>
+
+<h1>{{ message }}</h1>
+
+  {{#each filmData}}
+    <h4 class="small-4">{{ movies_title }}</h4>
+    <img src="images/{{ movies_cover }}" alt="Movie Trailer Cover">
+    <a href="/film/{{movies_id}}" class="button">View Details</a>
+  {{/each}}

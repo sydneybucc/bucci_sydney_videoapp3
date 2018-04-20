@@ -1,0 +1,16 @@
+<a href="/">
+  <i class="fa-fa-home"></i>
+</a>
+
+
+<h1>Movie Details</h1>
+  <h2>{{ filmData.movies_title }}</h4>
+    <iframe width="960" height="540" src="https://www.youtube.com/embed/{{ filmData.movies_trailer }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <p>{{ filmData.movies_desc }}</p>
+    <h3>Rating:</h3>
+    <p>{{ filmData.movies_rating }}</p>
+    <h3>Runtime:</h3>
+    <p>{{ filmData.movies_runtime }}</p>
+    <h3>Release Date:</h3>
+    <p>{{ filmData.movies_release }}</p>
+
