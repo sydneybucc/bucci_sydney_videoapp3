@@ -1,6 +1,6 @@
-# Audio/Video App Pt.2
+# Video App Pt.3 - Vue.js
 
-Node.js-based video application with the ability to watch movie trailers.
+Vue.js-based video application with the ability to watch movie trailers.
 
 ## Getting Started
 
@@ -42,7 +42,7 @@ http://foldername.oo
 In this case it would be:
 
 ```
-http://videoapp.oo
+http://videoapp3.oo
 ```
 
 That is the root of the project, to navigate to other pages, simply ```http://videoapp.oo/films/```
