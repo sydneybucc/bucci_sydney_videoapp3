@@ -9,7 +9,8 @@ var connect = mysql.createConnection({
   database: config.database,
   connectionLimit : 20,
   queueLimit : 100,
-  waitForConnection : true
+  waitForConnection : true,
+  wait_timeout: 30
 });
 
 module.exports = connect;
