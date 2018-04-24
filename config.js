@@ -6,4 +6,6 @@ const config = {
   database: "db_videoapp",
 }
 
+// console.log("from config");
+
 module.exports = config;
