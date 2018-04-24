@@ -1,16 +1,12 @@
-var mysql = require('mysql');
 var config = require('../config');
+var mysql = require('mysql');
 
 var connect = mysql.createConnection({
-  host: config.host,
-  port: config.port,
   user: config.user,
   password: config.password,
-  database: config.database,
-  connectionLimit : 20,
-  queueLimit : 100,
-  waitForConnection : true,
-  wait_timeout: 30
+  port: config.port,
+  host: config.host,
+  database: config.database
 });
 
 module.exports = connect;
