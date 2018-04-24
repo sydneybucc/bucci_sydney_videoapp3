@@ -7,9 +7,20 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" />
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
         <title>{{ title }}</title>
     </head>
     <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/films/kids" class="button expand">Kids</a></li>
+            </ul>
+        </nav>
+    </header>
+
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
             <div class="cell large-12">
@@ -18,10 +29,26 @@
         </div>
       </div>
 
+      <footer>
+          <ul>
+              <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+          </ul>
+      </footer>
+
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+        <script>
+            var appData = {
+                movies : {{{data}}}
+            }
+        </script>
         {{#if mainpage}}
             <script src="javascripts/main.js"></script>
+        {{/if}}
+
+        {{#if videopage}}
+            <script src="/js/videoVM.js"></script>
         {{/if}}
     </body>
 </html>
