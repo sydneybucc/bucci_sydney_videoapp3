@@ -1,9 +1,9 @@
-<a href="/">
-  <i class="fa-fa-home"></i>
-</a>
-
-
-<h1>Movie Details</h1>
+<section id="video">
+  <!-- back button here -->
+  <a href="/" class="back-button">
+    <i class="far fa-arrow-alt-circle-left"></i>
+  </a>
+  <h1>Movie Details</h1>
   <h2>{{ filmData.movies_title }}</h4>
     <iframe width="960" height="540" src="https://www.youtube.com/embed/{{ filmData.movies_trailer }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <p>{{ filmData.movies_desc }}</p>
@@ -14,7 +14,7 @@
     <h3>Release Date:</h3>
     <p>{{ filmData.movies_release }}</p>
 
-<!-- reviews go here -->
+  <!-- reviews go here -->
   <article class="comments" v-if="reviews.length > 0">
     <div v-for="review in reviews">
       <!-- temporary vue component -->

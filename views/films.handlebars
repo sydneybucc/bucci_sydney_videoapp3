@@ -20,7 +20,9 @@
       <i class="movie-genre"> {{ defaultMovie.genre_name }}</i>
     </aside>
 
-      <iframe width="960" height="540" src="https://www.youtube.com/embed/{{ filmData.movies_trailer }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <video autoplay controls>
+      <source src="video/{{ defaultMovie.movies_trailer }}" type="video/mp4">
+    </video>
   </div>
 
   {{!-- Vue.js thumbnails --}}
