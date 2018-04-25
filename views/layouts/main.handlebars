@@ -10,6 +10,7 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+        <script src="/dist/vue-social-sharing.min.js"></script>
         <title>{{ title }}</title>
     </head>
     <body>
@@ -31,9 +32,33 @@
 
       <footer>
           <ul>
-              <li><i class="fab fa-facebook"></i></li>
-              <li><i class="fab fa-twitter"></i></li>
+            <social-sharing url="https://vuejs.org/"
+                      title="The Progressive JavaScript Framework"
+                      description="Intuitive, Fast and Composable MVVM for building interactive interfaces."
+                      quote="Vue is a progressive framework for building user interfaces."
+                      hashtags="vuejs,javascript,framework"
+                      twitter-user="vuejs"
+                      inline-template>
+  <div>
+      <network network="facebook">
+        <i class="fa fa-facebook"></i> Facebook
+      </network>
+      <network network="googleplus">
+        <i class="fa fa-google-plus"></i> Google +
+      <network network="pinterest">
+        <i class="fa fa-pinterest"></i> Pinterest
+      </network>
+      <network network="reddit">
+        <i class="fa fa-reddit"></i> Reddit
+      </network>
+      <network network="twitter">
+        <i class="fa fa-twitter"></i> Twitter
+      </network>
+  </div>
+</social-sharing>
           </ul>
+          {{!-- https://www.npmjs.com/package/vue-social-sharing this is what I used for the social media --}}
+          {{!-- not entirely sure how to use it... --}}
       </footer>
 
         <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
