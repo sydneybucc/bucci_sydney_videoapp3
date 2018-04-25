@@ -13,7 +13,14 @@ const myApp = {
 
     data : {
       message : "Preview Your Favourite Movies!",
-      genres : []
+      genres : [],
+
+      overriddenNetworks: {
+        "test" : {
+          "sharer" : "https://google.com",
+          "type" : "popup"
+        }
+      }
     },
 
     methods : {
@@ -25,3 +32,5 @@ const myApp = {
 }
 // console.log(appData.movies);
 myApp.movieGenres(appData.movies, ["family", "drama", "adventure"]);
+
+Vue.use(SocialSharing);

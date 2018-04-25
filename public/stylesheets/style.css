@@ -8,3 +8,11 @@ h1 {
   margin-bottom: 100px;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul i.fa {
+  margin-right: 5px;
+}
