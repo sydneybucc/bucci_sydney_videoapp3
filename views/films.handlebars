@@ -2,13 +2,13 @@
   <i class="fa-fa-home"></i>
 </a>
 
-<h1>{{ message }}</h1>
+{{!-- <h1>{{ message }}</h1>
 
   {{#each filmData}}
     <h4 class="small-4">{{ movies_title }}</h4>
     <img src="images/{{ movies_cover }}" alt="Movie Trailer Cover">
     <a href="/film/{{movies_id}}" class="button">View Details</a>
-  {{/each}}
+  {{/each}} --}}
 
   <section id="app">
   <div class="movie-wrapper">
@@ -20,9 +20,7 @@
       <i class="movie-genre"> {{ defaultMovie.genre_name }}</i>
     </aside>
 
-    <video autoplay controls>
-      <source src="video/{{ defaultMovie.movies_trailer }}" type="video/mp4">
-    </video>
+      <iframe width="960" height="540" src="https://www.youtube.com/embed/{{ filmData.movies_trailer }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
 
   {{!-- Vue.js thumbnails --}}
@@ -38,3 +36,4 @@
       </div>
     </div>
   </section>
+</section>

@@ -23,5 +23,5 @@ const myApp = {
     delimiters : ["${", "}"]
   })
 }
-
-myApp.movieGenres(appData.movies, ["Family", "Drama", "Adventure"]);
+// console.log(appData.movies);
+myApp.movieGenres(appData.movies, ["family", "drama", "adventure"]);

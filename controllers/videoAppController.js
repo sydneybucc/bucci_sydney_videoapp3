@@ -20,7 +20,7 @@ exports.get_all_movies = (req, res) => {
 
       console.log(rows);
 
-      res.render('home', {
+      res.render('films', {
           defaultMovie : rows[Math.floor(Math.random() * rows.length)],
           data : JSON.stringify(rows),
           mainpage : true,
